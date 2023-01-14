@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(58, 62, 70);
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+div.header {
+    padding: 15px;
+}
+
+a.aheader {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 15%;
+    padding: 5%;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+input {
+    margin-bottom: 5%;
+    background-color: aliceblue;
+    border: none;
+    border-bottom: 1px rgb(100, 100, 100) solid ;
+    outline: 0;
+    height: 10%;
+}
+
+select {
+    margin-bottom: 5%;
+    border: none;
+    border-bottom: 1px rgb(100, 100, 100) solid ;
+    outline: 0;
+    height: 15%;
+    background-color: aliceblue;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+form p {
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+button {
+    border: none;
+    background-color: rgb(58, 62, 70);
+    height: 8vh;
+    border-radius: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(69, 74, 83);
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(58, 62, 70);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nomeCompainha {
+    color: rgb(163, 163, 163);
+    text-decoration: none;
+    bottom: 0px;
+    text-align: center;
+    position: sticky;
+}
+
+footer span {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    
+}
+
+span a.nomeCompainha {
+    color: rgb(255, 255, 255);
+}
