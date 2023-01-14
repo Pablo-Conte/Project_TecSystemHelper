@@ -1,3 +1,8 @@
+<?php
+    include_once './includes/connection.php';
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +13,21 @@
     <title>Pablo Emails!</title>
 </head>
 <body>
+    
+    <div class='titulo'>
+        <h1>TS Telecom Helper</h1>
+    </div>
     <div class="login">
         <h1>Login</h1>
-        <form action="./Pages/login.php">
-           <input type="text" placeholder="Nome">
-           <input type="password" placeholder="Senha">
+        <form method=post action="./Pages/loginAuth.php">
+           <input name='usuario' type="text" placeholder="Usuário">
+           <input name='senha' type="password" placeholder="Senha">
            <button type="submit">Login</button>
         </form>
     </div>
-
+    <footer>
+        <span class="nomeCompainha">Created by&nbsp;<a class="nomeCompainha" target="_blank" href="https://github.com/pablo-conte"> Pablo's Company ®</a></span>
+    </footer>
     
 </body>
 </html>

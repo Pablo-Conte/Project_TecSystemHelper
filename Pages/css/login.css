@@ -1,12 +1,17 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: 'Exo-Black';
+    src: url('./fonts/Exo/Exo-Light.ttf');
+}
+
+body {
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
     background-color: rgb(54, 54, 54);
@@ -17,9 +22,13 @@ div.login {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 75px;
     background-color: aliceblue;
     border-radius: 20px;
+}
+
+div.login h1 {
+    margin-top: 0px;
 }
 
 form {
@@ -50,4 +59,43 @@ form button {
     color: white;
     border-radius: 20px;
     margin-top: 10%;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: rgb(88, 88, 88);
+}
+
+div.titulo {
+    color: white;
+    justify-content: center;
+    margin-top: 3%;
+    font-family: Exo-Black;
+}
+
+footer {
+    background-color: rgb(58, 62, 70);
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nomeCompainha {
+    color: rgb(163, 163, 163);
+    text-decoration: none;
+    bottom: 0px;
+    text-align: center;
+    position: sticky;
+}
+
+footer span {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    
+}
+
+span a.nomeCompainha {
+    color: rgb(255, 255, 255);
 }

@@ -1,3 +1,8 @@
+<?php
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +14,17 @@
 </head>
 <body>
     <header>
-        <div class='header'><a class="aheader" href="../index.html">Pablinsk's Email</a></div>
-        <div class='header'><a class="aheader" href="../index.html">Voltar</a></div>
+        <div class='header'><a class="aheader" href="../index.php">Pablinsk's Email</a></div>
+        <div class='header'><a class="aheader" href="../index.php">Voltar</a></div>
     </header>
     <form method="post" action="./tiposEmail/emailTRE.php">
         <h1>TRE Mailer</h1>
+        <?php
+    
+
+    var_dump($_POST);
+
+?>
         <p>Chamado</p>
         <input type="text" id="chamado" name="chamado">    
         <p>Zona</p>
