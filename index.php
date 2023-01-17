@@ -1,6 +1,11 @@
 <?php
     include_once './includes/connection.php';
     session_start();
+
+    if (isset($_SESSION['id_estagiario'])){
+        header('Location: http://localhost/Project_TecSystemHelper/pages/envioEmailTRE.php');
+    }
+
 ?>
 
 <!DOCTYPE html>

@@ -1,6 +1,11 @@
 <?php
     session_start();
 
+    if(!isset($_SESSION['id_estagiario'])) {
+        header("Location: http://localhost/Project_TecSystemHelper/");
+        die();
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -15,14 +20,11 @@
 <body>
     <header>
         <div class='header'><a class="aheader" href="../index.php">Pablinsk's Email</a></div>
-        <div class='header'><a class="aheader" href="../index.php">Voltar</a></div>
+        <div class='header'><a class="aheader" href="./sair.php">Logout</a></div>
     </header>
     <form method="post" action="./tiposEmail/emailTRE.php">
         <h1>TRE Mailer</h1>
         <?php
-    
-
-    var_dump($_POST);
 
 ?>
         <p>Chamado</p>

@@ -14,5 +14,5 @@ INSERT INTO estagiario (
 ) VALUES (
     'suporte4',
     'suporte4@tscom.com.br',
-    '1234'
+    '$2a$12$9fJjZTAKmBfSecNLKdTKnuSGDlv9BpSx0CwXq.H0YDBoCRQgeOL3S'
 );

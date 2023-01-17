@@ -7,20 +7,24 @@
     $nome = $_POST['usuario'];
     $senha = $_POST['senha'];
 
-    $query = $conn->prepare('SELECT * FROM estagiario WHERE nome = :nome AND senha = :senha');
+    $query = $conn->prepare('SELECT * FROM estagiario WHERE nome = :nome');
     $query->bindParam(':nome', $nome);
-    $query->bindParam(':senha', $senha);
 
     $query->execute();
 
-    $result = $query->fetchAll();
+    $result = $query->fetch(PDO::FETCH_ASSOC);
 
-    if (count($result) > 0) {
-        $_SESSION['email'] = $result['email'];
-        header('Location: ./envioEmailTRE.php');
+    if($result == false){
+        $result = [];
     }
-    
-    // header('Location: ../index.php');
 
+
+    if (count($result) > 1 && password_verify($_POST['senha'], $result['senha'])) {
+        $_SESSION['id_estagiario'] = $result['id_estagiario'];
+        $_SESSION['senha'] = $_POST['senha'];
+        header('Location: ./envioEmailTRE.php');
+    } else {
+        header('Location: http://localhost/Project_TecSystemHelper/');
+    }
 
 ?>

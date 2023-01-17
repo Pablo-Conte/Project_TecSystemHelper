@@ -22,12 +22,12 @@ $mail = new PHPMailer(true);
     try {
         $chamado = $_POST['chamado'];
         $zona = $_POST['zona'];
-        $mail->Host = '192.168.254.15';
+        $mail->Host = '177.53.48.24';
         $mail->Port = 25;
         $mail->SMTPSecure = "tls";
         $mail->SMTPAuth = false;
-        $mail->Username = "suporte4";  
-        $mail->CharSet = 'UTF-8';
+        $mail->Username = "suporte4@tscom.com.br";  
+        $mail->CharSet = 'us-ascii';
         $mail->From = "suporte4@tscom.com.br";
         $mail->FromName = "Pablo Correa";
         $mail->SetFrom("suporte4@tscom.com.br", "Pablo Correa");
@@ -268,59 +268,9 @@ $mail = new PHPMailer(true);
                                 </span></p>
                                 </div>
                                 </body>";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        $mail->Password = "";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        $mail->Password = $_SESSION['senha'];
         $mail->Send();
-        header("Location: http://localhost/envioDeEmails/Pages/envioEmailTRE.php");
+        header("Location: http://localhost/Project_TecSystemHelper/Pages/envioEmailTRE.php");
 
     } catch (phpmailerException $e) {
         $result = $e->errorMessage();
