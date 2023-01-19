@@ -3,7 +3,7 @@
     session_start();
 
     if (isset($_SESSION['id_estagiario'])){
-        header('Location: http://localhost/Project_TecSystemHelper/pages/envioEmailTRE.php');
+        header('Location: ./pages/estagiario/envioEmailTRE.php');
     }
 
 ?>
@@ -15,7 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Pages/css/login.css">
-    <title>Pablo Emails!</title>
+    <title>Login</title>
 </head>
 <body>
     

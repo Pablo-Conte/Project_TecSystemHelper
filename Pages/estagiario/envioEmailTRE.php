@@ -14,16 +14,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/envioEmailTRE.css">
+    <link rel="stylesheet" href="../css/envioEmailTRE.css">
     <title>Envio de Email - TRE</title>
 </head>
 <body>
     <header>
-        <div class='header'><a class="aheader" href="../index.php">Pablinsk's Email</a></div>
-        <div class='header'><a class="aheader" href="./sair.php">Logout</a></div>
+        <div class='header'><a class="aheader" href="./estagiarioPage.php">Pablinsk's Email</a></div>
+        <div class='header'><a class="aheader" href="./estagiarioPage.php">Voltar</a></div>
     </header>
     <form method="post" action="./tiposEmail/emailTRE.php">
-        <h1>TRE Mailer</h1>
+        <h1>TRE Mailler</h1>
         <?php
 
 ?>

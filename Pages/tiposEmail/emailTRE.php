@@ -370,7 +370,7 @@ $mail = new PHPMailer(true);
                                 </body>";
         $mail->Password = $_SESSION['senha'];
         $mail->Send();
-        header("Location: http://localhost/Project_TecSystemHelper/Pages/envioEmailTRE.php");
+        header("Location: ../envioEmailTRE.php");
 
     } catch (phpmailerException $e) {
         $result = $e->errorMessage();

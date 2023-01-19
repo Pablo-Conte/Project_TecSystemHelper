@@ -22,9 +22,9 @@
     if (count($result) > 1 && password_verify($_POST['senha'], $result['senha'])) {
         $_SESSION['id_estagiario'] = $result['id_estagiario'];
         $_SESSION['senha'] = $_POST['senha'];
-        header('Location: ./envioEmailTRE.php');
+        header('Location: ./estagiario/estagiarioPage.php');
     } else {
-        header('Location: http://localhost/Project_TecSystemHelper/');
+        header('Location: ../index.php');
     }
 
 ?>

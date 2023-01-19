@@ -12,6 +12,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 8vh;
 }
 
 body {
@@ -92,6 +93,8 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 8vh;
 }
 
 .nomeCompainha {
