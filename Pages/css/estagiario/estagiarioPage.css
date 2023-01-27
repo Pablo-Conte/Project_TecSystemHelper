@@ -114,3 +114,23 @@ section {
 .linksFerramentas a:hover {
     background-color: rgb(103, 107, 116);
 }
+
+@media (max-width: 850px) {
+    .linksFerramentas {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .ferramentas {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 525px) {
+    .linksFerramentas a {
+        padding: 10%;
+        border-radius: 10px;
+    }
+}

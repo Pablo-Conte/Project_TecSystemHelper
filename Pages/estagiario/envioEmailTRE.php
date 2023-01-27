@@ -15,6 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/envioEmailTRE.css">
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/png">
     <title>Envio de Email - TRE</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
         <div class='header'><a class="aheader" href="./estagiarioPage.php">Pablinsk's Email</a></div>
         <div class='header'><a class="aheader" href="./estagiarioPage.php">Voltar</a></div>
     </header>
-    <form method="post" action="./tiposEmail/emailTRE.php">
+    <form method="post" action="../tiposEmail/emailTRE.php">
         <h1>TRE Mailler</h1>
         <?php
 
