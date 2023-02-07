@@ -22,7 +22,7 @@ $mail = new PHPMailer(true);
     try {
         $chamado = $_POST['chamado'];
         $zona = $_POST['zona'];
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;   
+        // $mail->SMTPDebug = SMTP::DEBUG_SERVER;   
         $mail->Host = '177.53.48.24';
         $mail->Port = 25;
         $mail->SMTPSecure = "tls";
@@ -135,10 +135,10 @@ $mail = new PHPMailer(true);
         if ($zona == 99) $zona = "099";
         
         $email = "zon".$zona."@tre-rs.jus.br";
-        var_dump($email);
+        
         $mail->AddAddress($email);
 
-        $mail->addCC('suporte@tscom.com.br');
+        $mail->addReplyTo('suporte@tscom.com.br');
         
         if ($zona == 1) $zona =	'Porto Alegre';
         if ($zona == 2) $zona =	'Porto Alegre';
