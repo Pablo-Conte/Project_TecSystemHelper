@@ -133,7 +133,7 @@ $mail = new PHPMailer(true);
         if ($zona == 97) $zona = "097";
         if ($zona == 98) $zona = "098";
         if ($zona == 99) $zona = "099";
-        
+
         $email = "zon".$zona."@tre-rs.jus.br";
         
         $mail->AddAddress($email);
@@ -306,6 +306,7 @@ $mail = new PHPMailer(true);
         if ($zona == 169) $zona = 'Caxias Do Sul';
         if ($zona == 172) $zona = 'Novo Hamburgo';
         if ($zona == 173) $zona = 'Gravataí';
+        if ($zona == 180) $zona = 'Ernesto';
 
         $mail->AddEmbeddedImage('assinatura.png', 'assinatura');
         $mail->Subject = "Unidade inoperante - TRE de $zona.";
